@@ -1,0 +1,11 @@
+- title: "home"
+  href: "/"
+
+- title: "about"
+  href: "/about/"
+
+- title: "subscribe"
+  href: "/subscribe/"
+
+- title: "patreon"
+  external: "https://www.patreon.com/bePatron?u=2548297&redirect_uri=https%3A%2F%2Fwww.sunderedmarches.com&utm_medium=widget&utm_source=wix"
