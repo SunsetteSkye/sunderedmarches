@@ -26,6 +26,9 @@ destination: _site
 
 permalink: /:categories/:title/
 
+plugins:
+  - jekyll-timeago
+
 #################################################
 ####CUSTOM
 

@@ -2,84 +2,127 @@
 layout: default
 ---
 <div class="row">
-  <div>
-  {% if page.sidebar == "true" %}
-    <article class="columns small-12 large-9 comic-page">
-  {% else %}
-    <article class="columns small-12 large-offset-1 large-10 comic-page">
-  {% endif %}
-      <nav class="comic-nav">
-	{% if site.posts.last.url == page.url %}
-	  <nav class="first-archive">
-	    <a href="{{ site.baseurl }}/{{ page.categories }}" class="hide-for-small">Archive<span class="icon-arrow-down"></span></a>
-	    <a href="{{ site.baseurl }}/{{ page.categories }}" class="hide-for-large"><span class="icon-arrow-down"></span></a>
-	  </nav>
-	  <nav class="first-next">
-	    <a href="{{ site.baseurl }}{{page.next.url}}" class="hide-for-small">Next<span class="icon-arrow-right"></span></a>
-	    <a href="{{ site.baseurl }}{{page.next.url}}" class="hide-for-large"><span class="icon-arrow-right"></span></a>
-	  </nav>
-	{% elsif site.posts.last.url != page.url %}
-	  {% if page.previous.url %}      
-	    <nav class="previous-comic">
-	      <a href="{{ site.baseurl }}{{ page.previous.url }}" class="icon-arrow-left hide-for-small">Previous</a>
-	      <a href="{{ site.baseurl }}{{ page.previous.url }}" class="icon-arrow-left hide-for-large"></a>
-	    </nav>
-	  {% endif %}	
-	  <nav class="first-comic">
-	    <a href="{{ site.baseurl }}{{ site.posts.last.url }}">First</a>
-	  </nav>   
-	  {% if page.next.url %}
-	    <nav class="comic-next">
-	      <a href="{{ site.baseurl }}{{page.next.url}}" class="hide-for-small">Next<span class="icon-arrow-right"></span></a>
-	      <a href="{{ site.baseurl }}{{page.next.url}}" class="hide-for-large"><span class="icon-arrow-right"></span></a>
-	    </nav>
-	    {% else %}
-	    <nav class="comic-next">
-	      <a href="{{ site.baseurl }}{{ page.categories }}" class="hide-for-small">Archive<span class="icon-arrow-down"></span></a>
-	      <a href="{{ site.baseurl }}{{ page.categories }}" class="hide-for-large"><span class="icon-arrow-down"></span></a>
-	    </nav>
-	  {% endif %}	
-	{% endif %}	
-      </nav>
-      
-	  {{ content }}
+    <div>
+        {% if page.sidebar == "true" %}
+        <article class="columns small-12 large-9 comic-page">
+            {% else %}
+            <article class="columns small-12 large-offset-1 large-10 comic-page">
+                {% endif %}
+                <nav class="comic-nav">
+                    {% if site.posts.last.url == page.url %}
+                    <nav class="first-archive">
+                        <a href="{{ site.baseurl }}/{{ page.categories }}" class="hide-for-small">Archive<span
+                            class="icon-arrow-down"></span></a>
+                        <a href="{{ site.baseurl }}/{{ page.categories }}"
+                           class="hide-for-large"><span class="icon-arrow-down"></span></a>
+                    </nav>
+                    <nav class="first-next">
+                        <a href="{{ site.baseurl }}{{page.next.url}}"
+                           class="hide-for-small">Next<span class="icon-arrow-right"></span></a>
+                        <a href="{{ site.baseurl }}{{page.next.url}}" class="hide-for-large"><span
+                            class="icon-arrow-right"></span></a>
+                    </nav>
+                    {% elsif site.posts.last.url != page.url %}
+                    {% if page.previous.url %}
+                    <nav class="previous-comic">
+                        <a href="{{ site.baseurl }}{{ page.previous.url }}"
+                           class="icon-arrow-left hide-for-small">Previous</a>
+                        <a href="{{ site.baseurl }}{{ page.previous.url }}"
+                           class="icon-arrow-left hide-for-large"></a>
+                    </nav>
+                    {% endif %}
+                    <nav class="first-comic">
+                        <a href="{{ site.baseurl }}{{ site.posts.last.url }}">First</a>
+                    </nav>
+                    {% if page.next.url %}
+                    <nav class="comic-next">
+                        <a href="{{ site.baseurl }}{{page.next.url}}"
+                           class="hide-for-small">Next<span class="icon-arrow-right"></span></a>
+                        <a href="{{ site.baseurl }}{{page.next.url}}" class="hide-for-large"><span
+                            class="icon-arrow-right"></span></a>
+                    </nav>
+                    {% else %}
+                    <nav class="comic-next">
+                        <a href="{{ site.baseurl }}{{ page.categories }}" class="hide-for-small">Archive<span
+                            class="icon-arrow-down"></span></a>
+                        <a href="{{ site.baseurl }}{{ page.categories }}"
+                           class="hide-for-large"><span class="icon-arrow-down"></span></a>
+                    </nav>
+                    {% endif %}
+                    {% endif %}
+                </nav>
 
-      <nav class="comic-nav">
-	{% if site.posts.last.url == page.url %}
-	  <nav class="first-archive">
-	    <a href="{{ site.baseurl }}/{{ page.categories }}/" class="hide-for-small">Archive<span class="icon-arrow-down"></span></a>
-	    <a href="{{ site.baseurl }}/{{ page.categories }}/" class="hide-for-large"><span class="icon-arrow-down"></span></a>
-	  </nav>
-	  <nav class="first-next">
-	    <a href="{{ site.baseurl }}{{page.next.url}}" class="hide-for-small">Next<span class="icon-arrow-right"></span></a>
-	    <a href="{{ site.baseurl }}{{page.next.url}}" class="hide-for-large"><span class="icon-arrow-right"></span></a>
-	  </nav>
-	{% elsif site.posts.last.url != page.url %}
-	  {% if page.previous.url %}      
-	    <nav class="previous-comic">
-	      <a href="{{ site.baseurl }}{{ page.previous.url }}" class="icon-arrow-left hide-for-small">Previous</a>
-	      <a href="{{ site.baseurl }}{{ page.previous.url }}" class="icon-arrow-left hide-for-large"></a>
-	    </nav>
-	  {% endif %}	
-	  <nav class="first-comic">
-	    <a href="{{ site.baseurl }}{{ site.posts.last.url }}">First</a>
-	  </nav>   
-	  {% if page.next.url %}
-	    <nav class="comic-next">
-	      <a href="{{ site.baseurl }}{{page.next.url}}" class="hide-for-small">Next<span class="icon-arrow-right"></span></a>
-	      <a href="{{ site.baseurl }}{{page.next.url}}" class="hide-for-large"><span class="icon-arrow-right"></span></a>
-	    </nav>
-	    {% else %}
-	    <nav class="comic-next">
-	      <a href="{{ site.baseurl }}{{ page.categories }}/" class="hide-for-small">Archive<span class="icon-arrow-down"></span></a>
-	      <a href="{{ site.baseurl }}{{ page.categories }}/" class="hide-for-large"><span class="icon-arrow-down"></span></a>
-	    </nav>
-	  {% endif %}	
-	{% endif %}	
-      </nav>
-    </article>
-  </div>
-  {% if page.sidebar == "true" %}
+                <ul class="author-post-meta">
+                    {% if page.author_image %}
+                    <img src="{{ site.baseurl }}/{{ page.author_image }}" class="author-image"/>
+                    {% endif %}
+
+                    {% if page.author_name %}
+                    {{ page.author_name }}
+                    {% endif %}
+
+                    <li>&bull; {{ page.date | timeago }}</li>
+
+                    <li>
+                        &bull; <span class="reading-time" title="Estimated read time">
+                          {% assign words = content | number_of_words %}
+                          {% if words < 360 %}
+                            1 min read
+                          {% else %}
+                            {{ words | divided_by:180 }} min read
+                          {% endif %}
+                        </span>
+                    </li>
+                </ul>
+
+                {{ content }}
+
+                <nav class="comic-nav">
+                    {% if site.posts.last.url == page.url %}
+                    <nav class="first-archive">
+                        <a href="{{ site.baseurl }}/{{ page.categories }}/" class="hide-for-small">Archive<span
+                            class="icon-arrow-down"></span></a>
+                        <a href="{{ site.baseurl }}/{{ page.categories }}/"
+                           class="hide-for-large"><span class="icon-arrow-down"></span></a>
+                    </nav>
+                    <nav class="first-next">
+                        <a href="{{ site.baseurl }}{{page.next.url}}"
+                           class="hide-for-small">Next<span class="icon-arrow-right"></span></a>
+                        <a href="{{ site.baseurl }}{{page.next.url}}" class="hide-for-large"><span
+                            class="icon-arrow-right"></span></a>
+                    </nav>
+                    {% elsif site.posts.last.url != page.url %}
+                    {% if page.previous.url %}
+                    <nav class="previous-comic">
+                        <a href="{{ site.baseurl }}{{ page.previous.url }}"
+                           class="icon-arrow-left hide-for-small">Previous</a>
+                        <a href="{{ site.baseurl }}{{ page.previous.url }}"
+                           class="icon-arrow-left hide-for-large"></a>
+                    </nav>
+                    {% endif %}
+                    <nav class="first-comic">
+                        <a href="{{ site.baseurl }}{{ site.posts.last.url }}">First</a>
+                    </nav>
+                    {% if page.next.url %}
+                    <nav class="comic-next">
+                        <a href="{{ site.baseurl }}{{page.next.url}}"
+                           class="hide-for-small">Next<span class="icon-arrow-right"></span></a>
+                        <a href="{{ site.baseurl }}{{page.next.url}}" class="hide-for-large"><span
+                            class="icon-arrow-right"></span></a>
+                    </nav>
+                    {% else %}
+                    <nav class="comic-next">
+                        <a href="{{ site.baseurl }}{{ page.categories }}/" class="hide-for-small">Archive<span
+                            class="icon-arrow-down"></span></a>
+                        <a href="{{ site.baseurl }}{{ page.categories }}/"
+                           class="hide-for-large"><span class="icon-arrow-down"></span></a>
+                    </nav>
+                    {% endif %}
+                    {% endif %}
+                </nav>
+            </article>
+    </div>
+    {% if page.sidebar == "true" %}
     {% include asides/recent_posts.html %}
-  {% endif %}
+    {% endif %}
 </div>

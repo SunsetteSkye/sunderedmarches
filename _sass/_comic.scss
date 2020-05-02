@@ -1,10 +1,31 @@
 .columns.comic-page {
   padding: 0px;
+  padding: 0px 70px;
 }
 
 .comic-page {
   border: solid $comic-border-color $comic-border-width;
   margin-bottom: 25px;
+  font-family: "EB Garamond", serif;
+}
+
+.author-image {
+  width: 22px;
+  border-radius: 50%;
+}
+
+ul.author-post-meta {
+  font-size: 16px;
+  list-style-type: disc;
+  margin: 10px 0px;
+}
+
+ul.author-post-meta li {
+  display: inline-block;
+}
+
+.whisper {
+  color: #808080;
 }
 
 .comic-nav {
@@ -89,6 +110,15 @@
     width: 10%;
     font-size: 2em;
   }
+}
+
+.comic-page figure {
+  margin: 1em 0px;
+}
+
+.comic-page h1 {
+  font-family: playfairdisplay-bold, "playfair display", serif;
+  font-size: 40px;
 }
 
 // Comic Archive Page
