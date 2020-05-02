@@ -80,7 +80,11 @@ He pulled the left gun from its thigh holster and fired a warning shot straight 
 
 That got the black beast's attention. He could just make out an edge of purple at the top of its... head? as it slowly turned — then it became a black blur, blitzing straight for Knickers while the man fell from the heights.
 
-{% include figure.html src="images/nightmare.webp" alt="Nightmare." %}
+{% include figure.html 
+   src="images/nightmare.webp" 
+   alt="Nightmare." 
+   targeturl="https://wildersurge.deviantart.com/" 
+   caption="Nightmare." %}
 
 You didn't have to be Knickers to know that the shortest distance between two points is a straight line. The problem with straight line motion, however, was that it was extremely predictable. Even if it was very fast.
 
@@ -116,4 +120,8 @@ The rabbit peeked its little fuzzy brown head out of his lapels and looked aroun
 
 Paddywhack wiggled his whiskers and the two waited in silence among the stars.
 
-{% include figure.html src="images/what-was-that.webp" alt="What WAS That?" %}
+{% include figure.html 
+   src="images/what-was-that.webp" 
+   alt="What WAS That?" 
+   targeturl="https://wildersurge.deviantart.com/" 
+   caption="What WAS That?" %}
