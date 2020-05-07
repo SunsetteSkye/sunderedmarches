@@ -11,9 +11,9 @@ layout: default
                 <nav class="comic-nav">
                     {% if site.posts.last.url == page.url %}
                     <nav class="first-archive">
-                        <a href="{{ site.baseurl }}/{{ page.categories }}" class="hide-for-small">Archive<span
+                        <a href="{{ site.baseurl }}/post/" class="hide-for-small">Archive<span
                             class="icon-arrow-down"></span></a>
-                        <a href="{{ site.baseurl }}/{{ page.categories }}"
+                        <a href="{{ site.baseurl }}/post/"
                            class="hide-for-large"><span class="icon-arrow-down"></span></a>
                     </nav>
                     <nav class="first-next">
@@ -43,9 +43,9 @@ layout: default
                     </nav>
                     {% else %}
                     <nav class="comic-next">
-                        <a href="{{ site.baseurl }}{{ page.categories }}" class="hide-for-small">Archive<span
+                        <a href="{{ site.baseurl }}/post/" class="hide-for-small">Archive<span
                             class="icon-arrow-down"></span></a>
-                        <a href="{{ site.baseurl }}{{ page.categories }}"
+                        <a href="{{ site.baseurl }}/post/"
                            class="hide-for-large"><span class="icon-arrow-down"></span></a>
                     </nav>
                     {% endif %}
@@ -80,9 +80,9 @@ layout: default
                 <nav class="comic-nav">
                     {% if site.posts.last.url == page.url %}
                     <nav class="first-archive">
-                        <a href="{{ site.baseurl }}/{{ page.categories }}/" class="hide-for-small">Archive<span
+                        <a href="{{ site.baseurl }}/post/" class="hide-for-small">Archive<span
                             class="icon-arrow-down"></span></a>
-                        <a href="{{ site.baseurl }}/{{ page.categories }}/"
+                        <a href="{{ site.baseurl }}/post/"
                            class="hide-for-large"><span class="icon-arrow-down"></span></a>
                     </nav>
                     <nav class="first-next">
@@ -112,9 +112,9 @@ layout: default
                     </nav>
                     {% else %}
                     <nav class="comic-next">
-                        <a href="{{ site.baseurl }}{{ page.categories }}/" class="hide-for-small">Archive<span
+                        <a href="{{ site.baseurl }}/post/" class="hide-for-small">Archive<span
                             class="icon-arrow-down"></span></a>
-                        <a href="{{ site.baseurl }}{{ page.categories }}/"
+                        <a href="{{ site.baseurl }}/post/"
                            class="hide-for-large"><span class="icon-arrow-down"></span></a>
                     </nav>
                     {% endif %}
@@ -122,7 +122,5 @@ layout: default
                 </nav>
             </article>
     </div>
-    {% if page.sidebar == "true" %}
-    {% include asides/recent_posts.html %}
-    {% endif %}
+    {% include asides/recent_posts_no_sidebar.html %}
 </div>
