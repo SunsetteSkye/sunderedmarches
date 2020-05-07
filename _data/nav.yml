@@ -1,14 +1,14 @@
-- title: "home"
+- title: "Home"
   href: "/"
 
-- title: "about"
+- title: "About"
   href: "/about/"
 
-- title: "characters"
+- title: "Characters"
   href: "/characters/"
 
-- title: "subscribe"
+- title: "Subscribe"
   href: "/subscribe/"
 
-- title: "patreon"
+- title: "Patreon!"
   external: "https://www.patreon.com/bePatron?u=2548297&redirect_uri=https%3A%2F%2Fwww.sunderedmarches.com&utm_medium=widget&utm_source=wix"

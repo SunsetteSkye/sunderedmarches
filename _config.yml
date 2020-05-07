@@ -24,10 +24,7 @@ destination: _site
 #sass:
 #    style: :compressed
 
-permalink: /:categories/:title/
-
-plugins:
-  - jekyll-timeago
+permalink: /post/:title/
 
 #################################################
 ####CUSTOM

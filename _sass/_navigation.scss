@@ -273,4 +273,9 @@
 	  background-color: lighten($navbar-color, 10%);
 	  margin-top: -15px;
 	}
-} 
+}
+
+#nav > .primary-nav.secondary-nav > li:hover > a {
+	color: #000;
+	display: inline-block;
+}

@@ -1,47 +1,57 @@
 <nav class="navbar">
-  <nav class="row">
-    <div id="nav">
-      <ul class="columns medium-10 left primary-nav">
+    <nav class="row">
+        <div id="nav">
+            <ul class="columns medium-10 left primary-nav">
 
-	<li id="toggleMenu"><a href="#nav">Menu</a></li>
-	<li id="hideMenu"><a href="#toggleMenu">Menu</a></li>
-	
-	{% for nav in site.data.nav %}
-	  {% if nav.subcategories != null %}
-	    <li class="dropdown">
-	      <a href="{{ site.baseurl }}{{ nav.url }}">{{ nav.title }}</a>
-		<ul>
-		  {% for subcategory in nav.subcategories %}
-		    <li><a href="{{ site.baseurl }}{{ subcategory.subhref }}">{{ subcategory.subtitle }}</a></li>
-		  {% endfor %}
-		</ul>
-	    </li>
-	  {% elsif nav.external-subcategories != null %}
-	    <li class="dropdown">
-	      <a href="{{ site.url }}{{ nav.url }}">{{ nav.title }}</a>
-		<ul>
-		  {% for subcategory in nav.external-subcategories %}
-		    <li><a href="{{ subcategory.subhref }}">{{ subcategory.subtitle }}</a></li>
-		  {% endfor %}
-		</ul>
-	    </li>
-		{% elsif nav.title == page.title %}
-		  <li class="active"><a href="{{ nav.href }}">{{ nav.title }}</a></li>
-		{% else %}
-		  {% if nav.href != null %}
-		  <li><a href="{{ site.baseurl }}{{ nav.href }}">{{ nav.title }}</a></li>
-		  {% else %}
-		  <li><a href="{{ nav.external }}">{{ nav.title }}</a></li>
-		  {% endif %}
-	  {% endif %}
-	{% endfor %}
-      </ul>
+                <li id="toggleMenu"><a href="#nav">Menu</a></li>
+                <li id="hideMenu"><a href="#toggleMenu">Menu</a></li>
 
-      <ul class="columns medium-2 right primary-nav">
-	{% for socials in site.data.socials %}
-	  <li class="right"><a href="{{ socials.href }}"><span class="icon-{{ socials.title }} socials"></span></a></li>
-	{% endfor %}
-      </ul>
-    </div>
-  </nav>
+                {% for nav in site.data.nav %}
+                {% if nav.subcategories != null %}
+                <li class="dropdown">
+                    <a href="{{ site.baseurl }}{{ nav.url }}">{{ nav.title }}</a>
+                    <ul>
+                        {% for subcategory in nav.subcategories %}
+                        <li><a href="{{ site.baseurl }}{{ subcategory.subhref }}">{{
+                            subcategory.subtitle }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                {% elsif nav.external-subcategories != null %}
+                <li class="dropdown">
+                    <a href="{{ site.url }}{{ nav.url }}">{{ nav.title }}</a>
+                    <ul>
+                        {% for subcategory in nav.external-subcategories %}
+                        <li><a href="{{ subcategory.subhref }}">{{ subcategory.subtitle }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                {% elsif nav.title == page.title %}
+                <li class="active"><a href="{{ nav.href }}">{{ nav.title }}</a></li>
+                {% else %}
+                {% if nav.href != null %}
+                <li><a href="{{ site.baseurl }}{{ nav.href }}">{{ nav.title }}</a></li>
+                {% else %}
+                <li><a href="{{ nav.external }}">{{ nav.title }}</a></li>
+                {% endif %}
+                {% endif %}
+                {% endfor %}
+            </ul>
+
+            <ul class="columns medium-2 right primary-nav">
+                {% for socials in site.data.socials %}
+                <li class="right"><a href="{{ socials.href }}"><span
+                    class="icon-{{ socials.title }} socials"></span></a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </nav>
 </nav>
+<div style="margin:5px auto;height: 40px;width: 200px;">
+    <iframe scrolling="no" frameborder="0" allow="autoplay; camera; microphone; geolocation; vr"
+            allowtransparency="true" allowfullscreen="" name="comp-k5hbtj0c"
+            style="width:176px;height:37px;min-height:37px;min-width:176px;display:block;position:absolute;"
+            title="[Migrated] - Patreon" aria-label="[Migrated] - Patreon" id="comp-k5hbtj0ciframe"
+            class="tpaw0iframe"
+            src="https://www.patreon.com/platform/iframe/wix?cacheKiller=1588736237878&amp;compId=comp-k5hbtj0c&amp;currency=KRW&amp;deviceType=desktop&amp;height=37&amp;instance=tzyYnauDb2ohgzA9sSvnP0bKw10_EbikSQ-8rMO834E.eyJpbnN0YW5jZUlkIjoiNWFlNDc2MTAtYzkyYS00MDRiLWExZmUtNjk0MWQ1NWRlYzlmIiwiYXBwRGVmSWQiOiIxNDk2NmQ1Ni1mMDAzLWI3Y2EtYTE1YS00MTY4MWRkNzMyOTAiLCJzaWduRGF0ZSI6IjIwMjAtMDUtMDZUMDU6MDQ6MDQuMjQzWiIsImRlbW9Nb2RlIjpmYWxzZSwiYWlkIjoiODI1YTVlNDAtODgxMy00OTRmLTk3ZDMtMjRhYzk0MTlkODAzIiwic2l0ZU93bmVySWQiOiIwZDIxMDYyNC1kMWI5LTRlNjMtYWJjYS1lZWExYzBhZTA0NGYifQ&amp;locale=en&amp;pageId=max7s&amp;siteRevision=151&amp;tz=Asia%2FSeoul&amp;viewMode=site&amp;viewerCompId=comp-k5hbtj0c&amp;width=176"></iframe>
+</div>

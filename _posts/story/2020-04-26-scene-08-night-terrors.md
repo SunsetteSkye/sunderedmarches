@@ -2,17 +2,17 @@
 layout: post
 title: "Scene 08: Night Terrors"
 date: 2020-04-26 18:21:45 -0700
-categories: post
-thumbnail: images/knicks-into-dreams.webp
+categories: [post, story]
+thumbnail: images/scene-08-night-terrors/knicks-into-dreams.webp
 facebook_type: 
-facebook_image: images/knicks-into-dreams.webp
+facebook_image: images/scene-08-night-terrors/knicks-into-dreams.webp
 author_name: Sunsette
 author_image: images/sunsette-author.png
 ---
 # Scene 08: Night Terrors
  
 {% include figure.html 
-   src="images/knicks-into-dreams.webp" 
+   src="images/scene-08-night-terrors/knicks-into-dreams.webp" 
    alt="Knicks: Into Dreams" 
    targeturl="https://wildersurge.deviantart.com/" 
    caption="Knicks: Into Dreams" %}
@@ -81,7 +81,7 @@ He pulled the left gun from its thigh holster and fired a warning shot straight 
 That got the black beast's attention. He could just make out an edge of purple at the top of its... head? as it slowly turned — then it became a black blur, blitzing straight for Knickers while the man fell from the heights.
 
 {% include figure.html 
-   src="images/nightmare.webp" 
+   src="images/scene-08-night-terrors/nightmare.webp" 
    alt="Nightmare." 
    targeturl="https://wildersurge.deviantart.com/" 
    caption="Nightmare." %}
@@ -109,7 +109,7 @@ The boy flared up just in time to dodge the dark shadow streaking at where he'd 
 Many seconds later, high above a sea of clouds, Knickers regained feeling in his body and managed to flick the toeswitch back into a moderate position — burning just enough rocket fuel to keep himself floating in place. He caught his breath as best he could.
 
 
-{% include whisper.html content="Paddy. You okay buddy?" %}
+`Paddy. You okay buddy?`
 
 
 The rabbit peeked its little fuzzy brown head out of his lapels and looked around anxiously, then chittered.
@@ -121,7 +121,7 @@ The rabbit peeked its little fuzzy brown head out of his lapels and looked aroun
 Paddywhack wiggled his whiskers and the two waited in silence among the stars.
 
 {% include figure.html 
-   src="images/what-was-that.webp" 
+   src="images/scene-08-night-terrors/what-was-that.webp" 
    alt="What WAS That?" 
    targeturl="https://wildersurge.deviantart.com/" 
    caption="What WAS That?" %}
