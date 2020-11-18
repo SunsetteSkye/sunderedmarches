@@ -32,6 +32,9 @@ permalink: /post/:title/
 # Set default header image
 header: yes
 header_xl: images/banner-xl.png
+header_large: images/banner-xl.png
+header_med: images/banner-xl.png
+header_sm: images/banner-xl.png
 
 ## Thumbnailer taken from https://github.com/chrisanthropic/jekyll-minimagick
 
