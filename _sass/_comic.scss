@@ -57,6 +57,35 @@ ul.author-post-meta li {
   margin-left: 25px;
 }
 
+.previous-comic-arrow-wrap {
+  display: inline-block;
+  position: absolute;
+  top: 50vh;
+  width: 0px;
+  height: 100%;
+}
+
+.previous-comic-arrow {
+  position: relative;
+  left: -30px;
+  width: 0;
+  height: 0;
+  border-top: 50vh solid transparent;
+  border-bottom: 50vh solid transparent;
+  border-right: 10px solid gray;
+}
+
+.comic-content-wrapper {
+  display: inline-block;
+}
+
+.next-comic-arrow {
+  width: 30%;
+  display: inline-block;
+  margin-left: 25px;
+}
+
+
 .first-comic {
   width: 30%;
   display: inline-block;

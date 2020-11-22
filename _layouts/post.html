@@ -75,7 +75,16 @@ layout: default
                     </li>
                 </ul>
 
-                {{ content }}
+                <!--
+                <div class="previous-comic-arrow-wrap">
+                    <div class="previous-comic-arrow"></div>
+                </div>
+                -->
+
+                <div class="comic-content-wrapper">
+                    {{ content }}
+                </div>
+                <div class="next-comic-arrow"></div>
 
                 <nav class="comic-nav">
                     {% if site.posts.last.url == page.url %}
