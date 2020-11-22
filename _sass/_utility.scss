@@ -1,7 +1,12 @@
 .center {
   display: block;
   margin: 0 auto;
-} 
+}
+
+.banner {
+  overflow-x: hidden;
+  width: 100%;
+}
 
 .blocky {
   position: relative;
